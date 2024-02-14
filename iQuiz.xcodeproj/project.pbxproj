@@ -13,6 +13,9 @@
 		F0C933132A9ABE6900198285 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0C933112A9ABE6900198285 /* Main.storyboard */; };
 		F0C933152A9ABE6C00198285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0C933142A9ABE6C00198285 /* Assets.xcassets */; };
 		F0C933182A9ABE6C00198285 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0C933162A9ABE6C00198285 /* LaunchScreen.storyboard */; };
+		F0C933202A9ACC5200198285 /* QuestaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C9331F2A9ACC5200198285 /* QuestaoViewController.swift */; };
+		F0C933222A9AD42C00198285 /* Questao.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C933212A9AD42C00198285 /* Questao.swift */; };
+		F0C933242A9AE10400198285 /* DesempenhoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C933232A9AE10400198285 /* DesempenhoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		F0C933142A9ABE6C00198285 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0C933172A9ABE6C00198285 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0C933192A9ABE6C00198285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0C9331F2A9ACC5200198285 /* QuestaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestaoViewController.swift; sourceTree = "<group>"; };
+		F0C933212A9AD42C00198285 /* Questao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questao.swift; sourceTree = "<group>"; };
+		F0C933232A9AE10400198285 /* DesempenhoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesempenhoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		F0C9330A2A9ABE6900198285 /* iQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				F0C933272A9AEAC900198285 /* View */,
+				F0C933262A9AEAAB00198285 /* Model */,
+				F0C933252A9AEA8E00198285 /* ViewController */,
 				F0C9330B2A9ABE6900198285 /* AppDelegate.swift */,
 				F0C9330D2A9ABE6900198285 /* SceneDelegate.swift */,
-				F0C9330F2A9ABE6900198285 /* ViewController.swift */,
-				F0C933112A9ABE6900198285 /* Main.storyboard */,
 				F0C933142A9ABE6C00198285 /* Assets.xcassets */,
-				F0C933162A9ABE6C00198285 /* LaunchScreen.storyboard */,
 				F0C933192A9ABE6C00198285 /* Info.plist */,
 			);
 			path = iQuiz;
+			sourceTree = "<group>";
+		};
+		F0C933252A9AEA8E00198285 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F0C933232A9AE10400198285 /* DesempenhoViewController.swift */,
+				F0C9331F2A9ACC5200198285 /* QuestaoViewController.swift */,
+				F0C9330F2A9ABE6900198285 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F0C933262A9AEAAB00198285 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F0C933212A9AD42C00198285 /* Questao.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F0C933272A9AEAC900198285 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F0C933162A9ABE6C00198285 /* LaunchScreen.storyboard */,
+				F0C933112A9ABE6900198285 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +174,9 @@
 				F0C933102A9ABE6900198285 /* ViewController.swift in Sources */,
 				F0C9330C2A9ABE6900198285 /* AppDelegate.swift in Sources */,
 				F0C9330E2A9ABE6900198285 /* SceneDelegate.swift in Sources */,
+				F0C933222A9AD42C00198285 /* Questao.swift in Sources */,
+				F0C933242A9AE10400198285 /* DesempenhoViewController.swift in Sources */,
+				F0C933202A9ACC5200198285 /* QuestaoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +328,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26AQA8M3T3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iQuiz/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -299,6 +336,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,6 +364,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
